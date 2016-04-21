@@ -33,7 +33,7 @@ def decryptPdf(f):
     print 'cola'
     return f.getDocumentInfo().title
 
-f = PdfFileReader(file("EstadodeCuenta.pdf", "rb"))
+f = PdfFileReader(file("fun.pdf", "rb"))
 o = decryptPdf(f)
 ff = o.get('pdf')
 ff.decrypt(o.get('s'))
